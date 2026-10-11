@@ -27,5 +27,5 @@ jobs:
       - name: Beispiel-Gerätedatei prüfen (mit Platzhaltern)
         run: |
           printf 'yapaia_satellite_api_key: "MDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWY="\nwifi_ssid: ci\nwifi_password: ci-dummy-password\n' > secrets.yaml
-          sed 's#url: https://github.com/Apfelsafft/yapaia-satellite#url: https://github.com/${{ github.repository }}#; s#ref: main#ref: ${{ github.head_ref || github.ref_name }}#' yapaia-satellite.beispiel.yaml > beispiel-ci.yaml
+          sed 's#url: https://github.com/Apfelsafft/Yapaia-Satellite#url: https://github.com/${{ github.repository }}#; s#ref: main#ref: ${{ github.head_ref || github.ref_name }}#' yapaia-satellite.beispiel.yaml > beispiel-ci.yaml
           esphome config beispiel-ci.yaml

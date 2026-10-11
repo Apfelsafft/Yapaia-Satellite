@@ -6,7 +6,7 @@ substitutions:
 
 packages:
   yapaia_satellite:
-    url: https://github.com/Apfelsafft/yapaia-satellite
+    url: https://github.com/Apfelsafft/Yapaia-Satellite
     files: [yapaia-satellite.yaml]
     ref: main
     refresh: 1d
